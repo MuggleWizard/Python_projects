@@ -5,7 +5,7 @@ print("")
 pips = random.randint(1, 6)
 print("You roll the die... it lands with", pips, "pips showing. \n")
 
-prizes = ["a car", "$100000", "a pony", "$500000"]
+prizes = ["a car", "$100000", "a pony", "$500000", "a castle"]
 prize_won = random.choice(prizes)
 print("You turn the wheel of fortune... It lands on a prize of", prize_won + "!! \n")
 
