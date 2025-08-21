@@ -44,4 +44,4 @@ dice_game()
 #     high_score = total_dice
 #     print('New high score! \n')
 
-# SuperBeastArt!  Rasengan!!!!
+# SuperBeastArt!  RASENGAN!!!!
