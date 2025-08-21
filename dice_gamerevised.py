@@ -45,3 +45,4 @@ dice_game()
 #     print('New high score! \n')
 
 # SuperBeastArt!  RASENGAN!!!!
+# Chidori!!!
