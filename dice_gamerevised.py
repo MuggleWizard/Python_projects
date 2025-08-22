@@ -1,15 +1,21 @@
 import random
 
 high_score = 0
+counter = 0
 
 
 def dice_game():
     global high_score
+    global counter
     while True:
         print("\n Current High Score: ", high_score, "\n")
+        print("\n Current counter value:", counter, "\n")
+        print()
         print("1) Roll Dice")
         print("2) Leave Game \n")
         choice = int(input("Enter you choice: "))
+        if choice == 1:
+            counter += 1
         if choice == 2:
             print("Goodbye! \n")
             quit()
@@ -20,6 +26,9 @@ def dice_game():
         print("You roll a...", pips2, "\n")
         total_dice = pips1 + pips2
         print("You have rolled a total of:", total_dice, "\n")
+        if counter >= 10:
+            print("Counter has reached the limit! Better luck next time!")
+            break
 
         if total_dice > high_score:
             high_score = total_dice
