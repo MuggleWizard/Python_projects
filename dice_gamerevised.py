@@ -27,7 +27,7 @@ def dice_game():
         total_dice = pips1 + pips2
         print("You have rolled a total of:", total_dice, "\n")
         if counter >= 10:
-            print("Counter has reached the limit! Better luck next time!")
+            print("Counter has reached the limit! Better luck next time! \n")
             break
 
         if total_dice > high_score:
@@ -39,6 +39,10 @@ def dice_game():
             print("Suns of the pharaoh! ")
         if total_dice == 12:
             print("You are the ultimate player! \n")
+            print(" * ")
+            print("***")
+            print("****")
+            print(" | ")
             break
         else:
             print("Keep trying! \n")
@@ -46,12 +50,6 @@ def dice_game():
 
 dice_game()
 
-# if total_dice < high_score:
-#     high_score = total_dice
-#     print("Keep trying! \n")
-# elif total_dice > high_score:
-#     high_score = total_dice
-#     print('New high score! \n')
 
 # SuperBeastArt!  RASENGAN!!!!
 # Chidori!!!

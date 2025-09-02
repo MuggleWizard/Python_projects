@@ -13,3 +13,14 @@ cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 random.shuffle(cards)
 print("The cards are now in this order: ")
 print(cards, "\n")
+
+
+fruits = ["apple", "pineapple", "kiwi", "orange"]
+fruit_picked = random.choice(fruits).capitalize()
+print(fruit_picked)
+print("You get the", fruit_picked, "my deary \n")
+
+characters = ["archer", "knight", "magi", "bruiser"]
+character_picked = random.choice(characters).capitalize()
+print("May your quest be fruitful and prosperous oh valiant",
+      character_picked + "!! \n")

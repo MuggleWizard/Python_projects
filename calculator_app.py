@@ -55,5 +55,5 @@ while True:
         b = int(input("input second number: "))
         div(a, b)
     elif choice == "e" or choice == "E":
-        print("Program ended. Have a good day")
+        print("Program ended. Have a good day \n")
         quit()
