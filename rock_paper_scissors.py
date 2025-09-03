@@ -12,6 +12,7 @@ while True:
         if user not in ['r', 'p', 's']:
             print("Not a valid entry")
             return "ah ah ahhhhhh thats a no no you selected {}".format(user)
+
         # else:
         #     print("You threw {}.".format(user))
 
@@ -41,10 +42,13 @@ while True:
     #     break
 
     print(play())
-# print(restart_game())
 
+    restart_game = input("\nPlay again? Yes or No: ").lower()
+    if restart_game == "no" or restart_game == "No" or restart_game == "n":
+        #!= "n"
+        print("\nFarewell valiant fighter!\n")
+        break
 
-# def restart_game():
 
 # def restart_game():
 #     player_input = input("\n Play again? Yes or No "). lower()
