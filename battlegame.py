@@ -80,5 +80,5 @@ while True:
     restart_game = input("Battle again? Yes or No: ").lower()
     if restart_game == "no" or restart_game == "No" or restart_game == "n":
         #!= "n"
-        print("Farewell valiant fighter!")
+        print("Farewell valiant fighter!\n")
         break
