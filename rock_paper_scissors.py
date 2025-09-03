@@ -35,12 +35,6 @@ while True:
             return True
         return False
 
-    # restart_game = input("Play again? Yes or No: ").lower()
-    # if restart_game == "no" or restart_game == "No" or restart_game == "n":
-    #     #!= "n"
-    #     print("Farewell valiant fighter!")
-    #     break
-
     print(play())
 
     restart_game = input("\nPlay again? Yes or No: ").lower()
@@ -49,14 +43,6 @@ while True:
         print("\nFarewell valiant fighter!\n")
         break
 
-
-# def restart_game():
-#     player_input = input("\n Play again? Yes or No "). lower()
-#     if player_input == "no" or player_input == "No" or player_input == "n":
-#         print("byeeeee")
-#         break
-#     elif player_input == "yes" or player_input == "Yes" or player_input == "y":
-#         print("Here we go!")
 
 # if__name__ == '__rock_paper_scissors__':
 #     print(play())
