@@ -9,12 +9,41 @@ while True:
             "\nWhat's your choice? 'r' for rock, 'p' for paper, 's' for scissors\n")
         user = user.lower()
 
+        if user == 'r':
+            print("""
+                     _________
+            ________|.   _____)
+                     __(_______)
+                    (__________)
+            _________(_________)
+                    |__(_______)
+            """)
+
+        if user == 'p':
+            print("""
+                  ________
+            ______|. _____)___
+                       _______)_
+                      __________)
+              __        ________)
+                |______________)
+                      
+             """)
+
+        if user == 's':
+            print("""
+            _________     
+        ____|    ____)_____
+                    _______)
+                  __________)
+            ___    (_____)
+               |__(____)
+                  
+                  """)
+
         if user not in ['r', 'p', 's']:
             print("Not a valid entry")
             return "ah ah ahhhhhh thats a no no you selected {}".format(user)
-
-        # else:
-        #     print("You threw {}.".format(user))
 
         computer = random.choice(['r', 'p', 's'])
 
