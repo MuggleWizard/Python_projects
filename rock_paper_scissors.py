@@ -71,6 +71,8 @@ while True:
         #!= "n"
         print("\nFarewell valiant fighter!\n")
         break
+    else:
+        print("That's not a valid response you donkey")
 
 
 # if__name__ == '__rock_paper_scissors__':
