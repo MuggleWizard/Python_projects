@@ -76,7 +76,7 @@ while True:
         case "yes" | "y" | "Yes":
             print("As you wish")
         case _:
-            print("Thats no a valid response amigo")
+            print("That's not a valid response amigo")
 
     # If statement code that works as well.  Updated to switch case code above for cleaner and more readible code.
     # if restart_game == "no" or restart_game == "No" or restart_game == "n":
