@@ -1,5 +1,6 @@
 import random
 
+# counter = 0
 
 while True:
 
@@ -67,13 +68,30 @@ while True:
     print(play())
 
     restart_game = input("\nPlay again? Yes or No: ").lower()
-    if restart_game == "no" or restart_game == "No" or restart_game == "n":
-        #!= "n"
-        print("\nFarewell valiant fighter!\n")
-        break
-    else:
-        print("That's not a valid response you donkey")
+
+    match restart_game:
+        case "no" | "n" | "No":
+            print("Adios senor")
+            break
+        case "yes" | "y" | "Yes":
+            print("As you wish")
+        case _:
+            print("Thats no a valid response amigo")
+
+    # If statement code that works as well.  Updated to switch case code above for cleaner and more readible code.
+    # if restart_game == "no" or restart_game == "No" or restart_game == "n":
+    #     #!= "n"
+    #     print("\nFarewell valiant fighter!\n")
+    #     break
+    # elif restart_game == "yes" or restart_game == "y" or restart_game == "Yes":
+    #     print("Game on!")
+    # else:
+    #     print("That's not a valid response you donkey")
 
 
 # if__name__ == '__rock_paper_scissors__':
 #     print(play())
+
+        # if counter >= 10:
+        #     print("Counter has reached the limit! Better luck next time! \n")
+        #     break
