@@ -1,10 +1,12 @@
 import random
 
-# counter = 0
+games_played = 0
 
 while True:
 
     def play():
+        print("")
+        print(f"Game {games_played + 1}")
 
         user = input(
             "\nWhat's your choice? 'r' for rock, 'p' for paper, 's' for scissors\n")
@@ -75,6 +77,8 @@ while True:
             break
         case "yes" | "y" | "Yes":
             print("As you wish")
+            games_played += 1
+            print(f"Total rounds played: {games_played}")
         case _:
             print("That's not a valid response amigo")
 
