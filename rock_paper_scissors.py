@@ -2,14 +2,23 @@ import random
 
 wins = 0
 ties = 0
-loss = 0
+losses = 0
 games_played = 0
 
 
-def update_win_percentage(wins, games_played):
-    if games_played == 0:
-        return 0  # avoid division by zero
-    return (wins/games_played) * 100
+# def update_win_percentage(wins, games_played):
+#     if games_played == 0:
+#         return 0  # avoid division by zero
+#     if ties > 0:
+#         print("ties don't count!")
+#         return 0
+#     return (wins/games_played) * 100
+
+def update_win_percentage(wins, losses):
+    if wins + losses == 0:  # Avoid division by zero
+        return 0
+    win_percentage = (wins/(wins + losses + ties) * 100)
+    return round(win_percentage, 2)
 
 
 while True:
@@ -71,18 +80,18 @@ while True:
             return "You have chosen {} and the computer has chosen {}. You won!\n ".format(
                 user, computer) + (f"Wins: {wins}")
         return "You have chosen {} and the computer has chosen {}. You lost :(\n".format(
-            user, computer) + (f"Lost: {loss}")
+            user, computer) + (f"Lost: {losses}")
 
     def is_win(player, opponent):
         global wins
-        global loss
+        global losses
         # return true if the player beats the opponent
         # winning conditions: r > s , s > p , p > r
         if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
             wins += 1
             return True
         else:
-            loss += 1
+            losses += 1
         return False
 
     print(play())
@@ -92,9 +101,9 @@ while True:
     match restart_game:
         case "no" | "n" | "No":
             print("Adios senor")
-            win_percentage = update_win_percentage(wins, games_played)
+            zorro = update_win_percentage(wins, losses)
             print(
-                f"Total rounds played: {games_played + 1}, Wins: {wins}, Wins percentage: {win_percentage:.2f}%")
+                f"Total rounds played: {games_played + 1}, Wins: {wins}, Wins percentage: {zorro:.2f}%")
             break
         case "yes" | "y" | "Yes":
             print("As you wish")
