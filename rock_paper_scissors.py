@@ -87,13 +87,6 @@ while True:
 
     print(play())
 
-    # if games_played > 0:
-    #     win_percentage = update_win_percentage(wins, games_played)
-    # print(
-    #     f"Games played: {games_played}, Wins: {wins}, Win percentage:{win_percentage:.2f}%")
-    # else:
-    #     print("NO games played yet")
-
     restart_game = input("\nPlay again? Yes or No: ").lower()
 
     match restart_game:
